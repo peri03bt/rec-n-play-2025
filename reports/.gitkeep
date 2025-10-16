@@ -1,0 +1,3 @@
+# Este arquivo garante que a pasta reports/ seja mantida no Git
+# Os relatórios gerados não são versionados (.gitignore)
+
