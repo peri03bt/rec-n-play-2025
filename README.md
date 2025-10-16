@@ -13,22 +13,49 @@ Sistema inteligente de geração de relatórios financeiros usando **LangChain**
 - ✅ **Validações**: Tratamento robusto de erros e validações de dados
 - 🔍 **KPIs Automáticos**: Receita, Despesa, Lucro Líquido e Margem de Lucro
 
+## 📚 Documentação
+
+Toda a documentação está organizada na pasta [`docs/`](docs/):
+
+| Documento                                                   | Descrição                         |
+| ----------------------------------------------------------- | --------------------------------- |
+| 🚀 [Guia Rápido](docs/QUICKSTART.md)                        | Instalação em 5 minutos           |
+| 💡 [Exemplos de Uso](docs/USAGE_EXAMPLES.md)                | 10 casos práticos de customização |
+| 📝 [Changelog](docs/CHANGELOG.md)                           | Histórico de mudanças             |
+| 🔧 [Resumo Técnico](docs/IMPROVEMENTS_SUMMARY.md)           | Detalhes de implementação         |
+| 📊 [Implementação Completa](docs/IMPLEMENTACAO_COMPLETA.md) | Visão executiva                   |
+| 🐙 [Publicar no GitHub](docs/PUBLICAR_GITHUB_RAPIDO.md)     | Guia de publicação                |
+
+**📖 [Veja o índice completo da documentação →](docs/README.md)**
+
 ## 📁 Estrutura do Projeto
 
 ```
 REC-N-PLAY-2025-main/
+├── app.py                      # Aplicação principal
+├── requirements.txt            # Dependências Python
+├── seed_db.sql                 # Script para popular o banco
+├── README.md                   # Este arquivo
+│
 ├── data/
 │   └── finance.db              # Banco de dados SQLite
-├── reports/
-│   ├── charts/                 # Gráficos PNG gerados
-│   ├── prompt/
-│   │   └── report_prompt-2.md  # Prompt para o agente IA
-│   ├── financial_report_*.md   # Relatórios Markdown
-│   └── financial_report_*.pdf  # Relatórios PDF
-├── app.py                      # Aplicação principal
-├── seed_db.sql                 # Script para popular o banco
-├── requirements.txt            # Dependências Python
-└── README.md
+│
+├── docs/                       # 📚 Documentação completa
+│   ├── README.md               # Índice da documentação
+│   ├── QUICKSTART.md           # Guia rápido
+│   ├── USAGE_EXAMPLES.md       # 10 exemplos práticos
+│   ├── CHANGELOG.md            # Histórico de mudanças
+│   ├── IMPROVEMENTS_SUMMARY.md # Resumo técnico
+│   ├── IMPLEMENTACAO_COMPLETA.md
+│   ├── COMO_SUBIR_GITHUB.md
+│   └── PUBLICAR_GITHUB_RAPIDO.md
+│
+└── reports/
+    ├── charts/                 # Gráficos PNG gerados
+    ├── prompt/
+    │   └── report_prompt-2.md  # Prompt para o agente IA
+    ├── financial_report_*.md   # Relatórios Markdown
+    └── financial_report_*.pdf  # Relatórios PDF
 ```
 
 ## 🚀 Como Usar
